@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookiesCookBook.Recipe.Ingredients
+namespace CookiesCookBook.Recipes.Ingredients
 {
     public abstract class Flour : Ingredient
     {

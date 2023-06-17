@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CookiesCookBook.Recipe.Ingredients
+namespace CookiesCookBook.Recipes.Ingredients
 {
     public class Butter : Ingredient
     {
@@ -12,5 +12,9 @@ namespace CookiesCookBook.Recipe.Ingredients
 
         public override string Name => "Butter";
         public override string PreparationInstructions => $"Melt on low heat. {base.PreparationInstructions}";
+        public override string ToString()
+        {
+            return $"{Id}. {Name}";
+        }
     }
 }
