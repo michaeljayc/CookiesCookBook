@@ -1,15 +1,11 @@
-﻿using CookiesCookBook.Recipe.Ingredients;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CookiesCookBook.Recipes.Ingredients;
+using CookiesCookBook.Recipes;
 
 namespace CookiesCookBook.Interfaces
 {
     public interface ICookieRepository
     {
-        public void Write(IEnumerable<Ingredient> ingredients);
-        public void Read(string fileName);
+        public void Write(string filePath, List<Recipe> allRecipes);
+        public List<Recipe> Read(string fileName);
     }
 }
