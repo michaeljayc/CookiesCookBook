@@ -8,7 +8,7 @@ namespace CookiesCookBook.Interfaces
 {
     public interface IStringRepository
     {
-        public List<string> Read(string filePath);
-        public void Write(string filePath, List<string> allRecipes);
+        public List<string> ReadFromString(string filePath);
+        public void WriteToString(string filePath, List<string> allRecipes);
     }
 }
